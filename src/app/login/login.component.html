@@ -1,0 +1,19 @@
+
+<div class="container padding">
+  <div class="row">
+  <div class="col-sm-6">
+  <div class="card card-body shadow p-3">
+      <h2>Log In</h2>
+      <form (submit)="loginUser($event)">
+          <div class="form-group">
+              <label>User ID</label>
+              <input type="text" class="form-control" required name="user_id" id="userid" ngModel>
+          </div>
+          
+          <button type="submit" value="Submit" class="btn btn-success">Sign In</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  

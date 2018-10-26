@@ -1,0 +1,37 @@
+<div class="container padding">
+  <div class="row">
+  <div class="col-sm-6">
+  <div class="card card-body shadow p-3">
+      <h2>New Vehicle</h2>
+      <form>
+          <div class="form-group">
+              <label>Vehicle Number</label>
+              <input type="text" class="form-control" required name="vehi_num" ngModel>
+          </div>
+          <div class="form-group">
+              <label>Vehicle Type</label> 
+              <!-- should be able to choose from a dropdown -->
+              <select type="text" class="form-control" required name="vehi_type" ngModel>
+                  <option value="val1">Mini Bus</option>
+                  <option value="val2">Long Bus</option>
+                  <option value="val3">Other</option>
+  
+              </select>
+          </div>
+          <div class="form-group">
+              <label>Number Of seats</label> 
+              
+              <!-- should be able to view in google maps -->
+              <input type="number" class="form-control" required name="num_seats" ngModel>
+          </div>
+          <div class="form-group">
+              <label>Description</label>
+              <input type="text" class="form-control" name="description" ngModel>
+          </div>
+          <button type="submit" class="btn btn-success">Save</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  

@@ -1,0 +1,61 @@
+<div class="container padding">
+    <div class="row">
+    <div class="col-sm-6">
+    <div class="card card-body shadow p-3">
+        <h2>My Participation Details</h2>
+        <form>
+            <div class="form-group">
+                <label>Would you like to join with us in #this_event ?</label> <!--{{#this_event}}--> 
+                
+                <select type="text" class="form-control" required name="is_participating" ngModel  #is_participating="ngModel">
+                    <option value="val1">Yes! I'd Love to</option>
+                    <option value="val2">Maybe(Need more time to thinks)</option>
+                    <option value="val3">Not this time</option>
+    <!-- decide the how to proceed with the form accoring to Participation of the user -->
+                </select>
+            </div>
+            
+            <div id="is_participating_hide" *ngIf="is_participating.value != 'val3'">
+            <div class="form-group">
+                    <label>Food Preferences</label>
+                    <input type="text" class="form-control" name="description" >
+            </div>
+            <div class="form-group">
+                <label>Any guests comming with you?</label> 
+                <select type="text" class="form-control" required name="is_guests_available" ngModel #is_guests_available="ngModel" > 
+                    <!-- (change)="hideGuest(is_guests_available)" -->
+                     <option value="valNo">No</option>
+                     <option value="valYes">Yes</option>
+                   
+    <!-- show guest relevant fields only user's input is yes -->
+                </select>
+            </div>
+            <div class="form-group" *ngIf="is_guests_available.value=='valYes'">
+                <label>Guest's details </label> 
+                
+                <!-- should be able to view in google maps -->
+                <div class="grid">
+                <input type="text" class="form-control" required name="event_date" placeholder="Name" >
+                <input type="number" class="form-control" required name="event_date" placeholder="Age" >
+                <select type="text" class="form-control" required name="event_date" placeholder="Gender" >
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+
+                </select>
+                <input type="text" class="form-control" required name="event_date" placeholder="Food Preferences(Nothing special ? Leave this blank)">
+            </div>
+                <span><a href="#">+ More Guests</a></span>
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" name="description" >
+            </div>
+        </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+      </div>
+    
+    </div> 
+    </div>
+    </div>
+    

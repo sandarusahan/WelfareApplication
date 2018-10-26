@@ -1,0 +1,9 @@
+<input type="number" [(ngModel)]="seats">
+<br>
+
+<div *ngFor="let row of 4 | numberToArray">
+    <span *ngFor="let seat of seats | numberToArray"><a href="#" >
+        <img [class.bottom-margin]="row === 2 && seat != seats.length" class="img-responsive" src="assets/seat.svg" />
+    </a></span>
+</div>
+

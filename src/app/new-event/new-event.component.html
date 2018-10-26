@@ -1,0 +1,42 @@
+<div class="container padding">
+<div class="row">
+<div class="col-sm-6">
+<div class="card card-body shadow p-3">
+    <h2>New Event</h2>
+    <form>
+        <div class="form-group">
+            <label>Event Title</label>
+            <input type="text" class="form-control" required name="event_name" ngModel>
+        </div>
+        <div class="form-group">
+            <label>Event Type</label> 
+            <!-- should be able to choose from a dropdown -->
+            <select type="text" class="form-control" required name="event_type" ngModel>
+                <option selected value="val1">One Day Team Gathering</option>
+                <option value="val2">Annual Trip</option>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Date</label> 
+            <!-- should be able to add multiple dates -->
+            <input type="date" class="form-control" required name="event_date" min="2018-01-01" max="2100-01-02" ngModel>
+            <span><a href="#">+ Add More Dates</a></span>
+        </div>
+        <div class="form-group">
+            <label>Location/Venue</label> 
+            
+            <!-- should be able to view in google maps -->
+            <input type="text" class="form-control" required name="event_location" ngModel>
+            <span><a href="#">+ Add More Places</a> <a href="#"> Choose from map.</a></span>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" name="description" ngModel>
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>

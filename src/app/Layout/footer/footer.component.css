@@ -1,0 +1,23 @@
+i.fa {
+    color: #e993cc;
+    font-size : 20px;
+}
+.card{
+    padding: 1rem;
+    margin: 1rem;
+    left: 1rem;
+    background-color: #7c8690;
+    color: white;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.padded-fonticons {
+    margin: 10px;
+}
+
+footer {
+    color: white;
+}

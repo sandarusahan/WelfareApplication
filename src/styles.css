@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.dropdown-menu {
+    left: -98px;
+    border-radius: 0;
+}
+
+footer.bg-dark {
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* @media (max-width: 990px) {
+   
+} */
+

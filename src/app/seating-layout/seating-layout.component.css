@@ -1,0 +1,14 @@
+.grid {
+  display: block;
+  /* grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px; */
+}
+
+span > a > img {
+  width: 7%;
+  height: 7%;
+}
+
+.bottom-margin {
+  margin-bottom: 4rem;
+}
